@@ -24,20 +24,20 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* LayoutQwerty
  * ,-----------------------------------------.  ,-----------------------------------------.
- * |   Q  |   W  |   E  |   R  |   T  | Esc  |  | GUI  |   Y  |   U  |   I  |   O  |   P  |
+ * |   Q  |   W  |   E  |   R  |   T  | Esc  |  | Alt  |   Y  |   U  |   I  |   O  |   P  |
  * |------+------+------+------+------+------|  |------+------+------+------+------+------|
  * |   A  |   S  |   D  |   F  |   G  | Tab  |  | Enter|   H  |   J  |   K  |   L  |   ;  |
  * |------+------+------+------+------+------|  |------+------+------+------+------+------|
  * |   Z  |   X  |   C  |   V  |   B  | Ctrl |  | Ctrl |   N  |   M  |   ,  |   .  |   /  |
  * |------+------+------+------+------+------|  |------+------+------+------+------+------|
- * |Shift | Lower| Alt  | Bksp |      |Raise |  |Raise |      |   [  |   ]  | Lower| Shift|
+ * |Shift | Lower| GUI  | Bksp |      |Raise |  |Raise |      |   [  |   ]  | Lower| Shift|
  * `-----------------------------------------'  `-----------------------------------------'
  */
 [_QWERTY] = LAYOUT_ortho_4x12(
-   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_ESC,  KC_LGUI, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,     \
+   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_ESC,  KC_LALT, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,     \
    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_TAB,  KC_ENT, KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,  \
    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LCTL, KC_RCTL , KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  \
-   KC_LSFT, LOWER,   KC_LALT, KC_BSPC, KC_SPC,   RAISE,  RAISE,  KC_SPC,   KC_LBRC, KC_RBRC,    LOWER, KC_RSHIFT  \
+   KC_LSFT, LOWER,   KC_LGUI, KC_BSPC, KC_SPC,   RAISE,  RAISE,  KC_SPC,   KC_LBRC, KC_RBRC,    LOWER, KC_RSHIFT  \
 ),
 
 // MISSING: ADJUST
